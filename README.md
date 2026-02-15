@@ -1,6 +1,6 @@
 # Colors Lab Demo
 
-This is a demo project for COP4331 to showcase a simulacrum of a git history. As this git assignment was given after the original assignment was due, the git history does not perfectly match a natural one. However, aside from a larger-than-average commit size, the commits included mirror ones that I have done in solo and group projects.
+This is a demo project for COP4331 to showcase a simulacrum of a git history. As this git assignment was given after the original assignment was due, the git history does not perfectly match a natural one. However, aside from a larger-than-average commit size, the commits included mirror ones that I have done in solo and group projects. All commits also use [Conventional Commits](https://cheatography.com/albelop/cheat-sheets/conventional-commits/) for formatting.
 
 The application itself is a LAMP stack project that allows a user to log in, save various colors, and then search for colors they have saved.
 
