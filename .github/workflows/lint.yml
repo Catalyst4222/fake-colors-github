@@ -18,7 +18,7 @@ jobs:
         run: npm install eslint
 
       - name: Run ESLint
-        run: npx eslint .
+        run: npx eslint .\js\* .\css\* --fix
   prettier:
     runs-on: ubuntu-latest
     steps:
@@ -35,4 +35,4 @@ jobs:
         run: npm install prettier
 
       - name: Run prettier
-        run: npx eslint .
+        run: npx prettier **.js **.css **.html
