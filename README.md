@@ -8,4 +8,4 @@ To run this application, set up an Apache webserver. Describing how to do so is 
 
 Once the server is set up, connect to it via a web browser to the port specified in apache (default port 80 for http).
 
-No AI was used in the creation of this repository. All code included was provided by the professor. 
+All code except for workflows was provided by the professor. AI was used for part of the integration test workflow
