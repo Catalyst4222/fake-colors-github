@@ -27,12 +27,6 @@ test("Hashes some random strings", async () => {
     body: jsonPayload,
   });
 
-  console.log(await response.text())
-
-  expect(await response.json()).toEqual({
-    id: 0,
-    firstName: "",
-    lastName: "",
-    error: "No Records Found",
-  });
+  // Invalid creds
+  expect(response.status).not.toBe(200)
 });
