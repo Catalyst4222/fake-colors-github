@@ -27,6 +27,8 @@ test("Hashes some random strings", async () => {
     body: jsonPayload,
   });
 
+  console.log(await response.text())
+
   expect(await response.json()).toEqual({
     id: 0,
     firstName: "",
