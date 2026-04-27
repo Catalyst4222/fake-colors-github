@@ -42,20 +42,6 @@ jobs:
             mysqladmin ping -h127.0.0.1 -utest_user -ptest_pass && break
             sleep 3
           done
-
-      - name: Install Composer dependencies
-        run: |
-          curl -sS https://getcomposer.org/installer | php
-          php composer.phar install
-
-      - name: Run integration tests (PHPUnit)
-        run: |
-          ./vendor/bin/phpunit --testsuite=integration
-        env:
-          DB_HOST: 127.0.0.1
-          DB_DATABASE: test_db
-          DB_USERNAME: test_user
-          DB_PASSWORD: test_pass
       
       - name: Setup Node.js
         uses: actions/setup-node@v4

@@ -1,3 +1,5 @@
+const { expect, test } = require("@jest/globals");
+
 test("Hashes some random strings", () => {
   let tmp = { login: "unknown", password: "nonexistant" };
   let jsonPayload = JSON.stringify(tmp);
@@ -8,7 +10,12 @@ test("Hashes some random strings", () => {
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
   xhr.onreadystatechange = function () {
-    expect(JSON.parse(xhr.responseText)).toEqual({"id":0,"firstName":"","lastName":"","error":"No Records Found"})
+    expect(JSON.parse(xhr.responseText)).toEqual({
+      id: 0,
+      firstName: "",
+      lastName: "",
+      error: "No Records Found",
+    });
   };
   xhr.send(jsonPayload);
 });
